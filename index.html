@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cotação de Cryptos</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/skeleton.css" />
+    <link rel="stylesheet" href="css/app.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="one-half column">
+          <img src="img/crypto.png" />
+        </div>
+        <div class="one-half column">
+          <form id="formulario">
+            <div class="row">
+              <label>Selecione sua moeda</label>
+              <select class="u-full-width" id="coin" name="coin">
+                <option value="">Selecione sua moeda</option>
+                <option value="USD">Dolar Estadounidense</option>
+                <option value="EUR">Euro</option>
+                <option value="GBP">Libras</option>
+                <option value="BRL">Reais</option>
+              </select>
+            </div>
+
+            <div class="row">
+              <div>
+                <label>Selecione sua Criptomoeda</label>
+                <select
+                  class="u-full-width"
+                  id="cryptos"
+                  name="cryptos"
+                >
+                  <option value="">Selecione sua Criptomoeda</option>
+                </select>
+              </div>
+            </div>
+            <input
+              class="button-primary u-full-width"
+              type="submit"
+              value="Ver Cotação"
+            />
+
+            <div id="resultado" class="resultado"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>
